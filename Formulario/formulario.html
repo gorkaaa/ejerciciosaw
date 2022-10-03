@@ -6,19 +6,66 @@
   </head>
   <body>
     <form action="procesarformulario.php" method="get">
-      <p>Nombre: <input type="text" name="nombre" size="40"></p>
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <label for="nombre"></label>
+      <p>Nombre: <input type="text" name="nombre" size="40" id="nombre" required></p>
       <p>Apellidos: <input type="text" name="apellidos" size="40"></p>
-      <p>A&ntilde;o de nacimiento: <input type="number" name="nacido" min="1950" max="2022"></p> 
-      <p>Email: <input type="email" name="email" size="40" required></p>     
+      <p>A&ntilde;o de nacimiento: <input type="number" name="nacido" min="1950" max="2022"></p>
+      <p>Lugar de nacimiento
+        <select name="lugardenacimiento">
+          <optgroup label="Comunidad de Madrid">
+            <option>Madrid</option>
+          </optgroup>
+          <optgroup label="Cataluña">
+            <option>Barcelona</option>
+            <option>Lleida</option>
+            <option>Girona</option>
+            <option>Tarragona</option>
+          </optgroup>
+          <optgroup label="Andalucia">
+            <option>Malaga</option>
+            <option>Ja&eacute;n</option>
+            <option>Sevilla</option>
+            <option>C&aacute;diz</option>
+            <option>Huelva</option>
+            <option>C&oacute;rdoba</option>
+            <option>Almer&iacute;a</option>
+            <option>Granada</option>
+          </optgroup>
+          <optgroup label="Castilla Le&oacute;n">
+            <option>Valladolid</option>
+            <option>Zamora</option>
+          </optgroup>
+        </select>
+      </p> 
+      <p>Email: <input type="email" name="email" size="40" required placeholder="usuario@dominio"></p>     
       <p>Foto del DNI: <input type="file" accept=".pdf" name="fotodni1"></p>
       <p>Sexo:
         <input type="radio" name="hm" value="h"> Hombre
         <input type="radio" name="hm" value="m"> Mujer
       </p>
+    </fieldset>
       <p>Deportes:
         <input type="checkbox" name="Tenis" value="t">Tenis
         <input type="checkbox" name="F&uacute;tbol" value="f">F&uacute;tbol
         <input type="checkbox" name="Baloncesto" value="b">Baloncesto
+      </p>
+      <p>Lugares visitados
+        <select name="lugaresvisitados[]" id="lugaresvisitados" multiple>
+          <option value="">Sevilla</option>
+          <option value="">Madrid</option>
+          <option value="">Barcelona</option>
+          <option value="sinelegir" selected></option>
+        </select>
+      </p> 
+     
+      <p>Comentarios
+        <textarea name="comentarios" rows="15" cols="50" placeholder="Escribe aqui tu comentario"></textarea><br><br>
+        <button>
+          Este bot&oacute;n se ha creado con una etiqueta button
+          <img src="perro.jpeg" alt="perrito" width="30 px">
+        </button>
       </p>
       <p>
         <input type="submit" value="Enviar">
