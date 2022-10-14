@@ -4,3 +4,11 @@ ul{
 ol{
     list-style-image:url("img/imagen.png") ;
 }
+dt.personalizado{
+    background-color: palegreen;
+    border-color: rgb(219, 13, 13);
+    padding: 3px;
+    border-width: 2px;
+    border-style: solid;
+    height: 50px;
+}
