@@ -15,4 +15,8 @@ tr{
 }
 td{
     border: 0.3em blue solid;
+    padding-top: 15%;
+    padding-bottom: 20%;
+    padding-left: 15%;
+    padding-right: 10%;
 }
