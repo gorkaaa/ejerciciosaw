@@ -1,0 +1,18 @@
+body{
+    border:1em red solid;
+    background-color: aqua;
+}   
+
+table{
+    border-style: double;
+    border-width: 1rem;
+    background-color: yellow;
+    width: 50%;
+    height: 40%;
+}
+tr{
+    border: 1em blue solid;
+}
+td{
+    border: 0.3em blue solid;
+}
