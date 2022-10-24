@@ -1,0 +1,5 @@
+/*Autor Gorka Romero Lopez*/
+
+header p:first-child{
+    color: aqua;
+}

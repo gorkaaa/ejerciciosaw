@@ -1,6 +1,6 @@
 header{
     border: 3px blue solid;
-    height: 20%;
+    height: 30%;
 }
 
 nav{
@@ -19,4 +19,13 @@ li.menu{
     padding: 3px;
     margin: 8px;
     border: 1px red solid;
+}
+
+div.logo{
+
+}
+
+div.menu{
+    display: inline;
+    width: 60%;
 }
