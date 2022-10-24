@@ -3,3 +3,16 @@
 header p:first-child{
     color: aqua;
 }
+
+a:link{
+    background-color: rgb(15, 228, 15);
+}
+
+a:visited{
+    background-color: beige;
+}
+
+a:hover{
+    background-color: rgb(15, 228, 15);
+    color:black
+}
