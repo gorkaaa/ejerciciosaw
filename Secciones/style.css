@@ -28,4 +28,5 @@ div.logo{
 div.menu{
     display: inline;
     width: 60%;
+    background-color: red;
 }
